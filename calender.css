@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: rgb(222, 234, 245);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: auto;
+    width: 265px;
+    box-shadow: 5px 4px 20px rgb(138, 206, 233),
+                -5px -4px 20px rgb(95, 212, 216);
+}
+
+.wrapper{
+    height: 100%;
+    width: 265px;
+    background: rgb(62, 44, 44);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.header{
+    color: #000000;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    border: none;
+    background: #67efef;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+}
+
+.body .days{
+    display: flex;
+
+}
+.body .days div{
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 23px;
+    background: rgba(73, 71, 76, 0.77);
+    color: white;
+    text-transform: capitalize;
+    margin: 1px;
+}
+
+.body .dates{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.body .dates div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #41414cd6;
+    height: 35px;
+    margin: 1px;
+    width: 35px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+
+.body .dates div.currentDate{
+    background: rgb(33, 212, 96);
+    color:#000000;
+}
