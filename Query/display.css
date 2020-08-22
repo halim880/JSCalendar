@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: rgb(224, 49, 49);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: auto;
+    width: 265px;
+}
+
+.wrapper{
+    height: 100%;
+    width: 265px;
+    background: rgb(62, 44, 44);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.wrapper.hide{
+    display: none;
+}
+.header{
+    color: #000000;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    border: none;
+    background: #67efef;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+}
+
+.body .days{
+    display: flex;
+
+}
+.body .days div{
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 23px;
+    background: rgba(73, 71, 76, 0.77);
+    color: white;
+    text-transform: capitalize;
+    margin: 1px;
+}
+
+.body .dates{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.body .dates div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #41414cd6;
+    height: 35px;
+    margin: 1px;
+    width: 35px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+
+.body .dates div.currentDate{
+    background: rgb(33, 212, 96);
+    color:#000000;
+}
+
+.query_calendar{
+    height: 150px;
+    width: 250px;
+    margin-top: 50px;
+    background: rgb(219, 141, 141);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;;
+}
+
+.select_month,
+.select_year{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+}
+
+.select_month select,
+.select_year select{
+    width: 100px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+}
+.select_month label,
+.select_year label{
+    padding: 5px;
+}
+
+.query_calendar button{
+    height: 30px;
+    width: 100px;
+    padding:5px;
+    background: rgb(249, 0, 69);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.body .dates div.present{
+    background: chocolate;
+    color: white;
+}

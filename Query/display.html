@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar test</title>
+    <link rel="stylesheet" href="../Query/display.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper hide">
+            <div class="header">
+                <h3 id ="month_name"></h3>
+                <h3 id = "full_year"></h3>
+            </div>
+            <div class="body">
+                <div class="days">
+
+                </div>
+                <div class="dates">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="query_calendar">
+        <div class="select_month">
+            <label for="">Select Month : </label>
+            <select name="" id="select_target_month">
+                <option value="0">January</option>
+                <option value="1">Fabruary</option>
+                <option value="2">March</option>
+                <option value="3">April</option>
+                <option value="4">May</option>
+                <option value="5">June</option>
+                <option value="6">July</option>
+                <option value="7">August</option>
+                <option value="9">October</option>
+                <option value="10">November</option>
+                <option value="11">December</option>
+            </select>
+        </div>
+        <div class="select_year">
+            <label for="">Select Year : </label>
+            <select name="" id="select_target_year">
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="1971">1971</option>
+                <option value="1971">1971</option>
+            </select>
+        </div>
+        <div class="btn"><button id="query_calendar_btn" onclick="assignTargetInfo()">Go</button></div>
+    </div>
+    <script src="query.js"></script>
+    <script src="display.js"></script>
+</body>
+</html>
